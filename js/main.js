@@ -118,6 +118,7 @@ numberBtns.forEach(btn => {
 })
 
 document.addEventListener('keydown', e => {
+	warningPrompt.textContent = ''
 	if (enteredNumber.length < 20) {
 		for (let i = 0; i < 10; i++) {
 			if (e.key == `${i}`) {
@@ -134,10 +135,28 @@ document.addEventListener('keydown', e => {
 			}
 		}
 	}
+	switch (e.key) {
+		case '=':
+			calculate()
+			break
+		case '+':
+			chooseOperation('+')
+			break
+		case '-':
+			chooseOperation('-')
+			break
+		case '/':
+			chooseOperation('÷')
+			break
+		case '*':
+			chooseOperation('×')
+			break
+	}
+
 	if (e.key == 'Backspace' || e.key == 'Delete') {
 		removeLastCharacter()
 	}
-	currentPrompt.textContent = enteredNumber
+	updateResult()
 })
 
 optionBtns.forEach(btn => {
