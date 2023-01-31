@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: #17171c;
+  color: #ffffff;
+}
+
+button {
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.main {
+  width: 90%;
+}
+.main .result-box {
+  text-align: right;
+  padding: 5rem 5%;
+}
+.main .result-box p {
+  display: block;
+  height: 2rem;
+  font-size: 1rem;
+  overflow-wrap: break-word;
+  color: #4e505f;
+  font-size: 1.6rem;
+}
+.main .result-box p:nth-of-type(2) {
+  color: #ffffff;
+  font-size: 4rem;
+}
+.main .result-box p:nth-of-type(3) {
+  font-size: 2rem;
+  color: #d64b4b;
+}
+.main .options {
+  display: flex;
+  flex-direction: column;
+}
+.main .options .row {
+  display: flex;
+  justify-content: space-between;
+}
+.main .options .row:first-of-type .box {
+  background-color: #4e505f;
+}
+.main .options .row:first-of-type .box:hover {
+  background-color: #737585;
+}
+.main .options .row:last-of-type .box {
+  width: 50%;
+}
+.main .options .row .box {
+  width: 25%;
+  border-radius: 25px;
+  font-size: 3.2rem;
+  margin: 0.5rem;
+  background-color: #2e2f38;
+  transition: background-color 0.3s;
+}
+.main .options .row .box:hover {
+  background-color: #3a3a3f;
+}
+.main .options .row .box:last-child {
+  background-color: #4b5efc;
+}
+.main .options .row .box:last-child:hover {
+  background-color: #293df1;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,92 @@
+@use './_colors' as c;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	font-family: sans-serif;
+	background-color: c.$bg-color;
+	color: c.$text-color;
+}
+
+button {
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	color: c.$text-color;
+}
+
+.main {
+	width: 90%;
+	.result-box {
+		text-align: right;
+		padding: 5rem 5%;
+		p {
+			display: block;
+			height: 2rem;
+			font-size: 1rem;
+			overflow-wrap: break-word;
+			color: c.$gray-color;
+			font-size: 1.6rem;
+		}
+		p:nth-of-type(2) {
+			color: c.$text-color;
+			font-size: 4rem;
+		}
+		p:nth-of-type(3) {
+			font-size: 2rem;
+			color: c.$red-color;
+		}
+	}
+	.options {
+		display: flex;
+		flex-direction: column;
+		.row {
+			display: flex;
+			justify-content: space-between;
+			&:first-of-type {
+				.box {
+					background-color: c.$gray-color;
+					&:hover {
+						background-color: #737585;
+					}
+				}
+			}
+			&:last-of-type {
+				.box {
+					width: 50%;
+				}
+			}
+			.box {
+				width: 25%;
+				border-radius: 25px;
+				font-size: 3.2rem;
+				margin: 0.5rem;
+				background-color: c.$button-color;
+				transition: background-color 0.3s;
+				&:hover {
+					background-color: #3a3a3f;
+				}
+				&:last-child {
+					background-color: c.$main-color;
+					&:hover {
+						background-color: #293df1;
+					}
+				}
+			}
+		}
+	}
+}

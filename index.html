@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple calculator for calculating math operations">
+    <meta name="keywords" content="calculator, simple, javascript">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <main class="main">
+        <div class="result-box">
+            <p data-type="log"></p>
+            <p data-type="current"></p>
+            <p data-type="warning">
+        </div>
+        <div class="options">
+            <div class="row">
+                <button data-mode='option' class="box">CE</button>
+                <button data-mode='option' class="box">C</button>
+                <button data-mode='option' class="box"><i class="ti ti-backspace"></i></button>
+                <button data-mode='operator' class="box ">&#247;</button>
+            </div>
+            <div class="row">
+                <button data-mode='number' class="box ">7</button>
+                <button data-mode='number' class="box ">8</button>
+                <button data-mode='number' class="box ">9</button>
+                <button data-mode='operator' class="box ">&#215;</button>
+            </div>
+            <div class="row">
+                <button data-mode='number' class="box ">4</button>
+                <button data-mode='number' class="box ">5</button>
+                <button data-mode='number' class="box ">6</button>
+                <button data-mode='operator' class="box ">-</button>
+            </div>
+            <div class="row">
+                <button data-mode='number' class="box ">1</button>
+                <button data-mode='number' class="box ">2</button>
+                <button data-mode='number' class="box ">3</button>
+                <button data-mode='operator' class="box ">+</button>
+            </div>
+            <div class="row">
+                <button data-mode='number' class="box ">0</button>
+                <button data-mode='number' class="box ">.</button>
+                <button data-mode='option' class="box ">=</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
