@@ -139,6 +139,9 @@ document.addEventListener('keydown', e => {
 		case '=':
 			calculate()
 			break
+		case 'Enter':
+			calculate()
+			break
 		case '+':
 			chooseOperation('+')
 			break
